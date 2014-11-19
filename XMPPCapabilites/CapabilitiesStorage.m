@@ -12,6 +12,7 @@
 #import "DatabaseManager.h"
 #import "XMPPServer.h"
 #import "XMPPCapability.h"
+#import "DDXML.h"
 
 @interface CapabilitiesStorage ()
 
@@ -260,6 +261,19 @@
                 XMPPCapability *capability = [[XMPPCapability alloc] initWithUniqueId:[NSString stringWithFormat:@"%@-%@",server.uniqueId,var]];
                 capability.serverDomain = server.uniqueId;
                 capability.featureName = var;
+                [capability saveWithTransaction:transaction];
+            }
+        }];
+        
+        
+        NSXMLElement *streamFeatures = [stream.rootElement elementForName:@"stream:features"];
+        NSArray *featureArray = [streamFeatures children];
+        [featureArray enumerateObjectsUsingBlock:^(DDXMLElement *element, NSUInteger idx, BOOL *stop) {
+            NSString *xmlns = [element xmlns];
+            if ([xmlns length]) {
+                XMPPCapability *capability = [[XMPPCapability alloc] initWithUniqueId:[NSString stringWithFormat:@"%@-%@",server.uniqueId,xmlns]];
+                capability.serverDomain = server.uniqueId;
+                capability.featureName = xmlns;
                 [capability saveWithTransaction:transaction];
             }
         }];

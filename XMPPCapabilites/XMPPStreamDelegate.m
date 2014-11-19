@@ -10,6 +10,10 @@
 #import "XMPPFramework.h"
 #import "XMPPStreamManagement.h"
 
+@interface XMPPStreamDelegate ()
+
+@end
+
 @implementation XMPPStreamDelegate
 
 - (void)xmppStreamDidConnect:(XMPPStream *)sender

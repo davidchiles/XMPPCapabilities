@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "XMPPFramework.h"
 
+
 @interface XMPPStreamDelegate : XMPPModule <XMPPStreamDelegate>
 
 @property (nonatomic, strong) NSString *password;

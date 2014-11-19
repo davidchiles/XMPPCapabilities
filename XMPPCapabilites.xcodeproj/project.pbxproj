@@ -24,7 +24,6 @@
 		636EB7051A1C831300F37A0A /* DatabaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636EB7041A1C831300F37A0A /* DatabaseView.m */; };
 		636EB7081A1C83A000F37A0A /* YapDatabaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 636EB7071A1C83A000F37A0A /* YapDatabaseObject.m */; };
 		63E607FA1A1D44FE00DA2B2A /* XMPPCapability.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E607F91A1D44FE00DA2B2A /* XMPPCapability.m */; };
-		63E607FE1A1D590800DA2B2A /* XMPPStreamCapabilityTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E607FD1A1D590800DA2B2A /* XMPPStreamCapabilityTester.m */; };
 		F137A722BBA7A628634C8ACA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4C28748DDFE80852CBD7AE /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,8 +72,6 @@
 		636EB7071A1C83A000F37A0A /* YapDatabaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YapDatabaseObject.m; sourceTree = "<group>"; };
 		63E607F81A1D44FE00DA2B2A /* XMPPCapability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPCapability.h; sourceTree = "<group>"; };
 		63E607F91A1D44FE00DA2B2A /* XMPPCapability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPCapability.m; sourceTree = "<group>"; };
-		63E607FC1A1D590800DA2B2A /* XMPPStreamCapabilityTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPStreamCapabilityTester.h; sourceTree = "<group>"; };
-		63E607FD1A1D590800DA2B2A /* XMPPStreamCapabilityTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPStreamCapabilityTester.m; sourceTree = "<group>"; };
 		DC3A0EE36D6EC50ACF8A24C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DD4C28748DDFE80852CBD7AE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -183,8 +180,6 @@
 				636EB6F11A1C73EF00F37A0A /* StreamManager.m */,
 				636EB6F31A1C789100F37A0A /* XMPPStreamDelegate.h */,
 				636EB6F41A1C789100F37A0A /* XMPPStreamDelegate.m */,
-				63E607FC1A1D590800DA2B2A /* XMPPStreamCapabilityTester.h */,
-				63E607FD1A1D590800DA2B2A /* XMPPStreamCapabilityTester.m */,
 				636EB7001A1C7D6B00F37A0A /* CapabilitiesStorage.h */,
 				636EB7011A1C7D6B00F37A0A /* CapabilitiesStorage.m */,
 			);
@@ -354,7 +349,6 @@
 				636EB7021A1C7D6B00F37A0A /* CapabilitiesStorage.m in Sources */,
 				636EB6FC1A1C7ACB00F37A0A /* Account.m in Sources */,
 				636EB7051A1C831300F37A0A /* DatabaseView.m in Sources */,
-				63E607FE1A1D590800DA2B2A /* XMPPStreamCapabilityTester.m in Sources */,
 				636EB6CC1A1C71F000F37A0A /* AppDelegate.m in Sources */,
 				636EB6CF1A1C71F000F37A0A /* MasterViewController.m in Sources */,
 				636EB6C91A1C71F000F37A0A /* main.m in Sources */,
